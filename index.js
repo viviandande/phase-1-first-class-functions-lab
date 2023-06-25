@@ -1,11 +1,11 @@
 // Code your solution in this file!
 
-const returnFirstTwoDrivers = ([driver1, driver2, driver3]) => {
-    return ([driver1, driver2])
+const returnFirstTwoDrivers = (arr) => {
+    return (arr.slice(0,2))
 }
 
-const returnLastTwoDrivers = ([driver1, driver2, driver3, driver4]) => {
-    return ([driver3, driver4])
+const returnLastTwoDrivers = (arr) => {
+    return (arr.slice(-2))
 }
 
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
@@ -23,3 +23,7 @@ const fareTripler = function(fare){
     return fare * 3
 }
 
+function selectDifferentDrivers(arr, callback){
+    return callback(arr)
+
+}
